@@ -24,7 +24,7 @@ export const botConfig = {
     activities: [
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "stalking",     // this is what people actually see
+        state: "listening to...",     // this is what people actually see
         type: 4,               // Custom
       },
     ],
@@ -93,8 +93,8 @@ export const botConfig = {
   embeds: {
     colors: {
       // Main brand colors.
-      primary: "#336699",
-      secondary: "#2F3136",
+      primary: "#82b6ff",
+      secondary: "#000061",
 
       // Standard status colors for success/error/warning/info messages.
       success: "#57F287",
@@ -161,9 +161,9 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "petals",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "petals",
       // Currency symbol shown in balances.
       symbol: "$",
     },
@@ -183,7 +183,7 @@ export const botConfig = {
 
     // Beg command random payout range.
     begMin: 5,
-    begMax: 50,
+    begMax: 1000,
 
     // Command cooldowns (milliseconds).
     cooldowns: {
@@ -332,7 +332,7 @@ export const botConfig = {
 
       // Human-readable descriptions for each criteria mode.
       criteria: {
-        account_age: "Account must be older than specified days",
+        account_age: "Account must be older than 365 days",
         server_size: "All users if server has less than 1000 members",
         none: "All users immediately"
       }
